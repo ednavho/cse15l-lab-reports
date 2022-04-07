@@ -16,7 +16,7 @@ It will be **fun**!
 ![click here for a screenshot of website](https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg)
 
 > see. that was fun
-> 
+
 Here's what we learned so far:
 1. create a github account
 2. create a repository with a new file inside
