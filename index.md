@@ -1,6 +1,6 @@
-#Welcome to CSE15L!
+# Welcome to CSE15L!
 
-##My name is Edna
+## My name is Edna
 
 Here are some fun facts about me:
 * My favorite food is sushi
@@ -11,7 +11,7 @@ Today, we'll be learning about *tuples*...
 
 It will be **fun**!
 
-[click here to direct yourself to google!] (google.com)
+[click here to direct yourself to google!] (http://google.com)
 
 ![click here for a screenshot of website] (https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg)
 
@@ -27,8 +27,10 @@ Here's what we learned so far:
   
 `inline code` with backticks
   
-  ```
-  #code block
+  
+ ```
+ # code block
+ 
 
 
 
