@@ -31,6 +31,8 @@ wow i love food
   
 `inline code` with backticks
   
+[lab1](new.md)
+  
   
  ```
 hi
