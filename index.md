@@ -40,7 +40,7 @@ wow i love food
 [lab1](new.md)
   
   
- ```
+we will be using [Autograder](https://autograder.ucsd.edu) for queue
 hi
  
 
