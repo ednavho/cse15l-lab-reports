@@ -19,9 +19,11 @@ In week 1, we learned how to use our machines (laptops) to connect to a remote c
 * If this message appears when you've connected to this server multiple times already, it might mean that someone is analyzing or trying to control the connection.
 
 4. After answering yes, it should prompt you for a password. Enter your course specific password to log in. 
-  * It will not show the password even when typing because the ieng6 server is very secure
+````
+* It will not show the password even when typing because the ieng6 server is very secure
 * After entering your password, it'll give some general information on when the last login was, what percentage CPU you're using on this system, and the cluster status. The last line should read: 'Prepping cs15lsp22'
 * The terminal from your client machine is now connected to a remote server, in this case, a computer in the CSE basement for the CSE 15L course. 
+````
 
 **Step 3: Trying Some Commands**
 Commands can be performed both on the client laptop and on the remote computer. Commands will be performed on the client laptop unless you connect to your course specific account in the terminal using ssh.
