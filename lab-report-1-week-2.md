@@ -56,7 +56,7 @@ note: using ls or cat on a directory that you don't have permission to see will 
 
 **Step 4: Moving Files with scp**
 
-When trying to work only *remotely*, it's beneficial to learn how to copy files back and forth between the client and remote computers. To copy files from the *client* computer to the *remote* computer, we'll use the **scp** command which should always be run from the client computer (this is before ssh-ing and logging into ieng6).
+When trying to work *remotely*, it's beneficial to learn how to copy files back and forth between the client and remote computers. To copy files from the *client* computer to the *remote* computer, we'll use the **scp** command which should always be run from the client computer (this is before ssh-ing and logging into ieng6).
 1. Create a file in VScode or choose a file from the client that you'd like to copy over to the remote server. In the terminal, type the command: 
 
     `scp filename cs15lsp22zz@ieng6.ucsd.edu:~/`
