@@ -14,7 +14,9 @@ In week 1, we learned how to use our machines (local computer/ client) to connec
 **Step 2: Remotely Connecting**
 
 1. Click the 'Terminal' dropdown for VScode, and press 'New Terminal'. This will create a new terminal where we will write our commands.
-2. In the terminal, there will be a '$' symbol. After the symbol, type the command: ssh cs15lsp22zz@ieng6.ucsd.edu  
+2. In the terminal, there will be a '$' symbol. After the symbol, type the command: 
+
+    `ssh cs15lsp22zz@ieng6.ucsd.edu`    
     * (the "zz" should be replaced with letters from account for the course.)
 
 3. If it's the first time you're connecting to this specific server, a message will pop up in the terminal describing how the authenticity of the host 'ieng6.ucsd.edu..." can't be established. It will also ask if you want to continue connecting. Enter yes.
@@ -55,7 +57,9 @@ note: using ls or cat on a directory that you don't have permission to see will 
 **Step 4: Moving Files with scp**
 
 When trying to work only *remotely*, it's beneficial to learn how to copy files back and forth between the client and remote computers. To copy files from the *client* computer to the *remote* computer, we'll use the **scp** command which should always be run from the client computer (this is before ssh-ing and logging into ieng6).
-1. Create a file in VScode or choose a file from the client that you'd like to copy over to the remote server. In the terminal, type the command: scp filename cs15lsp22zz@ieng6.ucsd.edu:~/
+1. Create a file in VScode or choose a file from the client that you'd like to copy over to the remote server. In the terminal, type the command: 
+
+    `scp filename cs15lsp22zz@ieng6.ucsd.edu:~/`
     * (the "zz" should be the letters from your course specific account)
 
         * scp: secure copy
@@ -75,20 +79,23 @@ When trying to work only *remotely*, it's beneficial to learn how to copy files 
 For more efficient and less time consuming workflow, creating a key that will automatically log us into the remote server without a password is very helpful. The **ssh-keygen** program creates a public key that will be copied to a location on the remote server and a private key that will be copied to a location on the client. The ssh command matches these files when you log in, so no password is necessary for logging in. 
 
 To create a key pair:
-1. After the '$' symbol in the terminal, type: ssh-keygen
+1. After the '$' symbol in the terminal, type: 
+
+    `ssh-keygen`
 2. Enter no passphrase when prompted for a passphrase. (Just press return.)
     * You should see your key fingerprint and randomart image printed out in the terminal after successfully creating a blank passphrase.
     * Now the .ssh directory on your computer will store the private key in file **id_rsa** and the public key in file **id_rsa.pub**
 3. Copy *only* the public key to the .ssh directory using the terminal:
-    > ssh cs15lsp22zz@ieng6.ucsd.edu
 
-    > mkdir .ssh
+    `$ ssh cs15lsp22zz@ieng6.ucsd.edu`
 
-    > exit
+    `$ mkdir .ssh`
 
-    > scp /Users/username/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+    `$ exit`
 
-    `now you should be able to ssh without entering a password`
+    `$ scp /Users/username/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+    > now you should be able to ssh without entering a password
   
 ![nopass](nopass.png)
 
