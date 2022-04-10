@@ -7,6 +7,8 @@ In week 1, we learned how to use our machines (laptops) to connect to a remote c
 1. Download [VScode](https://code.visualstudio.com/) and choose the correct operating system, either OSX (Macs) or Window (PC). 
 2. Once downloaded, VScode should give you a "Get Started" tab to guide you in whether you would like to create a new folder or file or an existing project.
 
+![installing](installing.png)
+
 
 **Step 2: Remotely Connecting**
 
@@ -28,6 +30,8 @@ In week 1, we learned how to use our machines (laptops) to connect to a remote c
 * The terminal from your client machine is now connected to a remote server, in this case, a computer in the CSE basement for the CSE 15L course. 
 ````
 
+![remotelyconnect](remotelyconnect.png)
+
 **Step 3: Trying Some Commands**
 
 Commands can be performed both on the client laptop and on the remote computer. Commands will be performed on the client laptop unless you connect to your course specific account in the terminal using ssh.
@@ -42,6 +46,9 @@ Here are some commands to try:
 * cp: copies a file or directory
 * cat: displays what's in the file
 * note: using ls or cat on a directory that you don't have permission to see will deny your request to see inside
+
+![trycommands](trycommands.png)
+![morecommands](morecommands.png)
 
 **Step 4: Moving Files with scp**
 
@@ -58,6 +65,8 @@ When trying to work only *remotely*, it's beneficial to learn how to copy files 
 3. After entering your password, log into ieng6 with ssh. Since we're now in your account directory, use the ls command to see how the file was copied into it in the remote computer. The file can be compiled and run from the remote server as well.
 4. To make a change to the file back on the client computer and save it to the server again, exit to terminal to go back to client and type the scp line again. Log in again. Compile and run the file on the remote server, and the new file should override and update on the remote server. 
 
+![movefiles](movefiles.png)
+
 **Step 5: Setting an SSH Key**
 
 For more efficient and less time consuming workflow, creating a key that will automatically log us into the remote server without a password is very helpful. ssh keys are particularly useful because the **ssh-keygen** program creates a public key that will be copied to a location on the remote server and a private key that will be copied to a location on the client. The ssh command matches these files when you log in, so no password is necessary for logging in. 
@@ -69,17 +78,22 @@ To create a key pair:
 3. You should see your key fingerprint and randomart image printed out in the terminal after successfully creating a blank passphrase.
 * Now the .ssh directory on your computer will store the private key in file **id_rsa** and the public key in file **id_rsa.pub**
 4. To copy *only* the public key to the .ssh directory:
-> $ ssh cs15lsp22zz@ieng6.ucsd.edu
-> $ mkdir .ssh
+> ssh cs15lsp22zz@ieng6.ucsd.edu
+
+> mkdir .ssh
 > exit
 > $ scp /Users/<username>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
   
+![nopass](nopass.png)
+
 **Step 6: Optimizing Remote Running**
   
 You can make running commands a lot more efficient with less lines!
   
 * Use semicolons to include multiple commands on the same line that will carry out in order
 * Use quotes around a command at the end of an ssh command to directly run it on the remote server
+
+![optimize](optimize.png)
 
 
 
