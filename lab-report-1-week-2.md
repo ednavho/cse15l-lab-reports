@@ -3,10 +3,13 @@
 In week 1, we learned how to use our machines (laptops) to connect to a remote computer server (ieng) to perform our necessary work there. Here's how to do so!
 
 **Step 1: Installing VScode**
+
 1. Download [VScode]{https://code.visualstudio.com/) and choose the correct operating system, either OSX (Macs) or Window (PC). 
 2. Once downloaded, VScode should give you a "Get Started" tab to guide you in whether you would like to create a new folder or file or an existing project.
 
+
 **Step 2: Remotely Connecting**
+
 1. Click the 'Terminal' dropdown for VScode, and press 'New Terminal'. This will create a new terminal where we will write our commands.
 2. In the terminal, there will be a '$' symbol. After the symbol, type the command
 > ssh cs15lsp22zz@ieng6.ucsd.edu  
@@ -16,7 +19,7 @@ In week 1, we learned how to use our machines (laptops) to connect to a remote c
 * If this message appears when you've connected to this server multiple times already, it might mean that someone is analyzing or trying to control the connection.
 
 4. After answering yes, it should prompt you for a password. Enter your course specific password to log in. 
-* It will not show the password even when typing because the ieng6 server is very secure
+  * It will not show the password even when typing because the ieng6 server is very secure
 * After entering your password, it'll give some general information on when the last login was, what percentage CPU you're using on this system, and the cluster status. The last line should read: 'Prepping cs15lsp22'
 * The terminal from your client machine is now connected to a remote server, in this case, a computer in the CSE basement for the CSE 15L course. 
 
@@ -57,7 +60,19 @@ To create a key pair:
 2. Enter no passphrase when prompted for a passphrase. (Just press return.)
 3. You should see your key fingerprint and randomart image printed out in the terminal after successfully creating a blank passphrase.
 * Now the .ssh directory on your computer will store the private key in file **id_rsa** and the public key in file **id_rsa.pub**
-4. To copy *only* the public key to the .ssh directory
+4. To copy *only* the public key to the .ssh directory:
+> $ ssh cs15lsp22zz@ieng6.ucsd.edu
+> $ mkdir .ssh
+> exit
+> $ scp /Users/<username>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+  
+  **Optimizing Remote Running**
+  
+  You can make running commands a lot more efficient with less lines!
+  
+  * Use semicolons to include multiple commands on the same line that will carry out in order
+  * Use quotes around a command at the end of an ssh command to directly run it on the remote server
+
 
 
 
