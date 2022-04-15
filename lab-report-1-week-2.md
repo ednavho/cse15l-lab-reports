@@ -14,20 +14,23 @@ In week 1, we learned how to use our machines (local computer/ client) to connec
 **Step 2: Remotely Connecting**
 
 1. Click the 'Terminal' dropdown for VScode, and press 'New Terminal'. This will create a new terminal where we will write our commands.
-2. In the terminal, there will be a '$' symbol. After the symbol, type the command: 
+2. In the terminal, type the command: 
 
     ```
-    ssh cs15lsp22zz@ieng6.ucsd.edu
+    $ ssh cs15lsp22zz@ieng6.ucsd.edu
     ```
     * (the "zz" should be replaced with letters from account for the course.)
 
-3. If it's the first time you're connecting to this specific server, a message will pop up in the terminal describing how the authenticity of the host 'ieng6.ucsd.edu..." can't be established. It will also ask if you want to continue connecting. Enter yes.
+3. If it's the first time you're connecting to this specific server, it will also ask if you want to continue connecting. Enter yes.
     * If this message appears when you've connected to this server multiple times already, it might mean that someone is analyzing or trying to control the connection.
 
 4. After answering yes, it should prompt you for a password. Enter your course specific password to log in. 
 
     * It will not show the password even when typing because the ieng6 server is very secure
-    * After entering your password, it'll give some general information on when the last login was, what percentage CPU you're using on this system, and the cluster status. The last line should read: 'Prepping cs15lsp22'
+    * After entering your password, it'll give some general information on when the last login was, what percentage CPU you're using on this system, and the cluster status. The last line should read: 
+   ```
+   - Prepping cs15lsp22
+   ```
     * The terminal from your client machine is now connected to a remote server, in this case, a computer in the CSE basement for the CSE 15L course!
 
 
@@ -39,15 +42,17 @@ In week 1, we learned how to use our machines (local computer/ client) to connec
 
 Commands can be performed both on the client laptop and on the remote computer. Commands will be performed on the client laptop unless you connect to your course specific account in the terminal using ssh.
 
-Here are some commands to try:
-* pwd: prints path to home directory
-* cd: changes directory
-* cd..: goes back on directory
-* ls: lists what's inside the directory
-* ls -at: lists file names in directory
-* ls -lat: lists of files in directory in most recent order
-* cp: copies a file or directory
-* cat: displays what's in the file
+```
+//Here are some commands to try:
+$ pwd //prints path to home directory
+$ cd //changes directory
+$ cd.. //goes back on directory
+$ ls //lists what's inside the directory
+$ ls -at //lists file names in directory
+$ ls -lat //lists of files in directory in most recent order
+$ cp //copies a file or directory
+$ cat //displays what's in the file
+```
 
 note: using ls or cat on a directory that you don't have permission to see will deny your request to see inside
 
@@ -62,7 +67,7 @@ When trying to work *remotely*, it's beneficial to learn how to copy files back 
 1. Create a file in VScode or choose a file from the client that you'd like to copy over to the remote server. In the terminal, type the command: 
 
     ``` 
-    scp filename cs15lsp22zz@ieng6.ucsd.edu:~/
+    $ scp filename cs15lsp22zz@ieng6.ucsd.edu:~/
     ```
    * (the "zz" should be the letters from your course specific account)
 
@@ -83,10 +88,10 @@ When trying to work *remotely*, it's beneficial to learn how to copy files back 
 For more efficient and less time consuming workflow, creating a key that will automatically log us into the remote server without a password is very helpful. The **ssh-keygen** program creates a public key that will be copied to a location on the remote server and a private key that will be copied to a location on the client. The ssh command matches these files when you log in, so no password is necessary for logging in. 
 
 To create a key pair:
-1. After the '$' symbol in the terminal, type: 
+1. In the terminal, type: 
 
     ```
-    ssh-keygen
+    $ ssh-keygen
     ```
 2. Enter no passphrase when prompted for a passphrase. (Just press return.)
     * You should see your key fingerprint and randomart image printed out in the terminal after successfully creating a blank passphrase.
@@ -95,11 +100,8 @@ To create a key pair:
 
     ```
     $ ssh cs15lsp22zz@ieng6.ucsd.edu
-
     $ mkdir .ssh
-
     $ exit
-
     $ scp /Users/username/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
     ```
 
