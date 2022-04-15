@@ -21,7 +21,13 @@ In week 1, we learned how to use our machines (local computer/ client) to connec
     ```
     * (the "zz" should be replaced with letters from account for the course.)
 
-3. If it's the first time you're connecting to this specific server, it will also ask if you want to continue connecting. Enter yes.
+3. If it's the first time you're connecting to this specific server, you will see a message similar to this. When asked whether or not you would like to continue connecting, enter yes.
+    ```
+    The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+    
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+    ```
+    
     * If this message appears when you've connected to this server multiple times already, it might mean that someone is analyzing or trying to control the connection.
 
 4. After answering yes, it should prompt you for a password. Enter your course specific password to log in. 
