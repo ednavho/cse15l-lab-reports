@@ -38,7 +38,7 @@ I also added an if statement after all four link elements have been found and th
 
 ![exclamation](exclamation.png)
 
-[File with failure inducing input that prompted me to change my code](testfile3.md)
+[File with failure inducing input that prompted me to make this change](testfile3.md)
 
 I debugged my code because the symptom was a wrong answer output. Since there was an exclamation mark before the open bracket, the string inside the parenthesis is not a link and should not be included in the ArrayList. Because of the bug in my code (not accounting for if it could be a photo implementation), this allowed for the unwanted append of the string into the ArrayList.
 
