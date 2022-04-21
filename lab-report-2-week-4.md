@@ -1,10 +1,10 @@
 # Edna's Lab Report 2 Week 4
 
-In week 3, we got practice with debugging and differentiating between bugs and symptoms.
+In week 3, we practiced debugging and differentiating between bugs and symptoms.
 
 **Code Change #1**
 
-I added break statements for when any one of the open bracket, closed bracket, open parenthesis, or closed parenthesis wasn't found in the string file. If all four elements are not present, the link format is not correct or there is not link present. 
+I added break statements for when any one of the open bracket, closed bracket, open parenthesis, or closed parenthesis wasn't found in the string file. If all four elements are not present, the link format is not correct or there is no link present. 
 
 ![allfourelements](allfourelems.png)
 
