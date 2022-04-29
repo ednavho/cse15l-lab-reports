@@ -8,7 +8,7 @@ I added break statements for when any one of the open bracket, closed bracket, o
 
 ![allfourelements](allfourelems.png)
 
-[File with failure inducing input that prompted me to make this change](testfile1.md)
+[File with failure inducing input that prompted me to make this change](https://ednavho.github.io/cse15l-lab-reports/testfile1.md)
 
 I debugged my code because the symptom was an OutOfMemoryError. In the test file, the closed bracket was not present. Because of the bug in my code (not accounting for if all four link elements were present or not), this created an infinite while loop since currentIndex won't change and it would keep searching for the bracket.
 
