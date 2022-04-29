@@ -24,7 +24,7 @@ On top of checking if all four link elements are present, I also added an if sta
 
 ![together](together.png)
 
-[File with failure inducing input that prompted me to make this change](testfile2.md)
+[File with failure inducing input that prompted me to make this change](https://ednavho.github.io/cse15l-lab-reports/testfile2.md)
 
 I debugged my code because the symptom was a wrong answer as an output. The string "https://google.com" inside the parenthesis should not be added to the ArrayList since the closed bracket and open parenthesis are not right next to each other (incorrect link format). Because of the bug in my code (not accounting for if closet bracket and open parenthesis are next to each other), this allowed for the unwanted append of the string into the ArrayList.
 
@@ -38,7 +38,7 @@ I also added an if statement after all four link elements have been found and th
 
 ![exclamation](exclamation.png)
 
-[File with failure inducing input that prompted me to make this change](testfile3.md)
+[File with failure inducing input that prompted me to make this change](https://ednavho.github.io/cse15l-lab-reports/testfile3.md)
 
 I debugged my code because the symptom was a wrong answer output. Since there was an exclamation mark before the open bracket, the string inside the parenthesis is not a link and should not be included in the ArrayList. Because of the bug in my code (not accounting for if it could be a photo implementation), this allowed for the unwanted append of the string into the ArrayList.
 
