@@ -44,7 +44,7 @@ After I've copied the entire directory over to my remote account, I can login an
 
 ![testwhiledirinrem](testwhiledirinrem.png)
 
-To copy the entire directory over and run the commands after logging into the remote account in one line, I would copy over the directory, login to the remote account, and then put in quotes to change into the correct directory with all the files as well as the compile and run lines. From this one line of commands, it compiled tester files through my remote account (however with some errors). When I login to my remote account, I can see that the new directory is copied over and all the files are inside. 
+To copy the entire directory over and run the commands after logging into the remote account in one line, I would copy over the directory, login to the remote account, and then put in quotes to change into the correct directory with all the files as well as the compile and run lines. From this one line of commands, it compiled tester files through my remote account (however with some errors). It fails to run right now because of the different versions of Java Runtime. When I login to my remote account, I can see that the new directory is copied over and all the files are inside. 
 
 ![oneline](oneline.png)
 ![copiedover](entiredircopiedover.png)
