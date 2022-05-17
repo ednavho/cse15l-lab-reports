@@ -8,15 +8,6 @@
 
 [Lab Report 3](https://ednavho.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 
-[Lab Report 3](https://ednavho.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
-
-`[a link`](url.com)
-
-[another link](`google.com)`
-
-[`cod[e`](google.com)
-
-[`code]`](ucsd.edu)
 
 
 
