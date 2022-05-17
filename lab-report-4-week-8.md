@@ -4,7 +4,19 @@ For the past few weeks, we've been looking into testing our code with JUnit test
 
 ## **Test Snippet 1**
 
-**My Implementation**
+- The expected output should be:
 
+    ```[`google.com, google.com, ucsd.edu]```
+    
+- The test in MarkdownParseTest.java should look like this:
 
+![myimptest1](myimptest1.png)
+
+- The corresponding output when running the JUnit test with my implementation:
+
+![myimptest1output](myimpytest1output.png)
+
+- The corresponding output when running the JUnit test with my peer's implementation:
+
+![bellatest1output](bellatest1output.png)
 
