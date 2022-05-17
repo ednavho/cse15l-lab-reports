@@ -8,7 +8,7 @@ For the past few weeks, we've been looking into testing our code with JUnit test
 
     ```[`google.com, google.com, ucsd.edu]```
     
-- The test in MarkdownParseTest.java should look like this:
+- The test in MarkdownParseTest.java for each implementation should look like this:
 
 ![myimptest1](myimptest1.png)
 
@@ -19,4 +19,42 @@ For the past few weeks, we've been looking into testing our code with JUnit test
 - The corresponding output when running the JUnit test with my peer's implementation:
 
 ![bellatest1output](bellatest1output.png)
+
+
+## **Test Snippet 2**
+
+- The expected output should be:
+
+    ```[a.com, a.com(()), example.com]```
+    
+- The test in MarkdownParseTest.java for each implementation should look like this:
+
+![myimptest2](myimptest2.png)
+
+- The corresponding output when running the JUnit test with my implementation:
+
+![myimptest2output](myimptest2output.png)
+
+- The corresponding output when running the JUnit test with my peer's implementation:
+
+![bellatest2output](bellatest2output.png)
+
+
+## **Test Snippet 3**
+
+- The expected output should be:
+
+    ```[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]```
+    
+- The test in MarkdownParseTest.java for each implementation should look like this:
+
+![myimptest3](myimptest3.png)
+
+- The corresponding output when running the JUnit test with my implementation:
+
+![myimptest3output](myimptest3out.png)
+
+- The corresponding output when running the JUnit test with my peer's implementation:
+
+![bellatest3output](bellatest3output.png)
 
