@@ -52,11 +52,11 @@ For the past few weeks, we've been looking into testing our code with JUnit test
 
 - The corresponding output when running the JUnit test with my implementation:
 
-![myimptest3output](myimptest3out.png)
+![myimptest3output](myimp3output.png)
 
 - The corresponding output when running the JUnit test with my peer's implementation:
 
-![bellatest3output](bellatest3output.png)
+![bellatest3output](bella3output.png)
 
 
 ## **Debugging Ideas**
