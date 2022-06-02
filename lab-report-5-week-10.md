@@ -20,9 +20,8 @@ since there's an exclamation mark before the link brackets and parenthesis. The 
 
 ![tabug](tabug.png)
 
-The bug in the code is that after checking if the double brackets are present, it should check if there's an exclamation mark before the open bracket (if the open bracket is not at index 0). If there is an exlamation mark before, currentIndex should be updated to be ```closeParen - 1```. The search should then continue, starting from the index after closeParen for any other link that might be in the file. It would find the 
+The bug in the code is that after checking if the double brackets are present, it should check if there's an exclamation mark before the open bracket (if the open bracket is not at index 0). If there is an exlamation mark before, currentIndex should be updated to be ```closeParen - 1```. The search should then continue, starting from the index after closeParen for any other link that might be in the file. It would find the outer brackets and parenthesis, and within the outer brackets, it would find the photo format for bar but it should be included in the outer bracket with foo. ``foo bar`` would be the name of the overall photo. 
 
-![test577 ![test577](test577.png)](test577.png)
 
 ## **Second Test File With Different Outputs**
 
